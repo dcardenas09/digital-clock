@@ -1,0 +1,13 @@
+body{
+    height:500px;
+}
+
+#top-row{
+    height:50%;
+    background-color:aqua;
+}
+
+#bottom-row{
+    height:50%;
+    background-color:azure;
+}
