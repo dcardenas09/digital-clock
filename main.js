@@ -4,6 +4,8 @@ $(document).ready( function(){
     var padding = ((screenHeight - 8)/2 - 64)/2;
     $("#top-left").css("padding-top", padding);
     $("#top-left").css("padding-bottom", padding);
+    $("#top-right").css("padding-top", padding);
+    $("#top-right").css("padding-bottom", padding);
     
     function displayTimeTL(){
         var currentTime = new Date();
@@ -18,6 +20,10 @@ $(document).ready( function(){
         var seconds = currentTime.getSeconds();
         if (seconds < 10) seconds = "0"+seconds;
         $("#top-left").html(hours+":"+minutes+":"+seconds+" "+ampm);
+        $("#top-right").html(hours+":"+minutes+":"+seconds+" "+ampm);
+        $("#bottom-left").html(hours+":"+minutes+":"+seconds+" "+ampm);
+        $("#bottom-right").html(hours+":"+minutes+":"+seconds+" "+ampm);
+    
     }
     setInterval(function(){
         displayTimeTL();
