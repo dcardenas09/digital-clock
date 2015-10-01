@@ -6,6 +6,10 @@ $(document).ready( function(){
     $("#top-left").css("padding-bottom", padding);
     $("#top-right").css("padding-top", padding);
     $("#top-right").css("padding-bottom", padding);
+    $("#bottom-left").css("padding-top", padding);
+    $("#bottom-left").css("padding-bottom", padding);
+    $("#bottom-right").css("padding-top", padding);
+    $("#bottom-right").css("padding-bottom", padding);
     
     function displayTimeTL(){
         var currentTime = new Date();
@@ -19,10 +23,10 @@ $(document).ready( function(){
         if (minutes < 10) minutes = "0"+minutes;
         var seconds = currentTime.getSeconds();
         if (seconds < 10) seconds = "0"+seconds;
-        $("#top-left").html(hours+":"+minutes+":"+seconds+" "+ampm);
-        $("#top-right").html(hours+":"+minutes+":"+seconds+" "+ampm);
-        $("#bottom-left").html(hours+":"+minutes+":"+seconds+" "+ampm);
-        $("#bottom-right").html(hours+":"+minutes+":"+seconds+" "+ampm);
+        $("#top-left").html("Miami<br>"+hours+":"+minutes+":"+seconds+" "+ampm);
+        $("#top-right").html("London<br>"+(8+hours)+":"+minutes+":"+seconds+" "+ampm);
+        $("#bottom-left").html("Los Angeles<br>"+(hours-3)+":"+minutes+":"+seconds+" "+ampm);
+        $("#bottom-right").html("Tokyo<br>"+(15+hours)+":"+minutes+":"+seconds+" "+ampm);
     
     }
     setInterval(function(){

@@ -4,10 +4,21 @@ body{
 
 #top-row{
     height:50%;
-    background-color:aqua;
+    background-color:darkseagreen;
 }
 
 #bottom-row{
     height:50%;
-    background-color:azure;
+    background-color:cadetblue;
+}
+
+#top-left, #bottom-left, #top-right, #bottom-right{
+    height:100%;
+    border:2px solid black;
+    width:50%;
+    box-sizing:border-box;
+    float:left;
+    font-size:60px;
+    font-family: 'Black Ops One', cursive;
+    text-align:center
 }
